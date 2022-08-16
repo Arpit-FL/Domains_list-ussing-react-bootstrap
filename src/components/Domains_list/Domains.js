@@ -166,7 +166,7 @@ const Domains = (props) => {
               <Modal.Title>Delete Confirmation</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              Are you Sure you want to delete{" "}
+              Are you sure you want to delete{" "}
               <strong>{deleteItem?.name}</strong> whitelisted domain?
             </Modal.Body>
             {showSpinner && (
