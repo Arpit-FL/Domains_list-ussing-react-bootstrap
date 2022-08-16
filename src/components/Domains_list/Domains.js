@@ -97,6 +97,8 @@ const Domains = (props) => {
     setShow(false);
     setCompanyDomainValidation(true);
     setCompanyNameValidation(true);
+    setCompany("");
+    setDomains("");
   };
 
   return (
@@ -290,6 +292,19 @@ const Domains = (props) => {
           draggable
           pauseOnHover
         />
+        {checkDomains.length === 0 && (
+          <h2
+            className="NoDomains-heading mt-5"
+            style={{
+              color: "red",
+              display: "flex",
+              justifyContent: "center",
+              textAlign: "center",
+            }}
+          >
+            No Domains found
+          </h2>
+        )}
       </div>
     </Container>
   );
