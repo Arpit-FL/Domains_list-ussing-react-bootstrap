@@ -135,7 +135,7 @@ const Domains = (props) => {
                 <tr>
                   <td>{index + 1}</td>
                   <td>{item.company}</td>
-                  <td>{item.domains}</td>
+                  <td>{item.domain}</td>
                   <td
                     style={{ paddingLeft: "3vh" }}
                     onClick={() => {
